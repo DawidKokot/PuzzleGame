@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/908d3a5795.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="help">
+    <span class="greyHUD" id="previewMsg">hold <em>p</em> for solution preview</span>
+    <span class="greyHUD" id="minimalMoves"></span>
+  </div>
+  <div id="stats">
+    <div class="greyHUD moves" id="moves">0</div>
+    <div class="greyHUD" id="timer">
+      <div id="minutes">0</div>
+      <div id="seconds">00</div>
+      <div id="miliseconds">00</div>
+    </div>
+    <i class="fas fa-trophy greyHUD" id="trophy"></i>
+  </div>
+  <div id="board"></div>
+  <div class="greyHUD" id="bestTimes">
+    <div class="bestTimeBtnContainer">
+      <span class="bestTimesLvlChange" id="bestTimesLess"></span>
+    </div>
+    <h1>Your Best Times</h1>
+    <i class="fas fa-trash" id="deleteTimes" title="Clear Best Times"></i>
+    <!-- container bot best times lists -->
+    <div id="bestTimesLists">
+      <!-- added in JS -->
+    </div>
+    <div class="bestTimeBtnContainer">
+      <span class="bestTimesLvlChange" id="bestTimesMore"></span>
+    </div>
+  </div>
+  <div id="input-container">
+    <div id="input">
+      <div class="input-btn greyHUD" id="less">&ndash;</div>
+      <input type="text" name="Difficulty Level" id="level" maxlength="2" value="2">
+      <div class="input-btn greyHUD" id="more">+</div>
+    </div>
+  </div>
+  <div id="strictModeBtn"><button class="greyHUD">STRICT MODE</button></div>
+  <div id="nextBtn"><button class="greyHUD">NEXT</button></div>
+
+  <script src="puzzle.js"></script>
+
+  <footer class="greyHUD" style="border-radius: 0;">&copy; 2020 Dawid Kokot</footer>
+
+  <!-- responsywnosc na male ekrany -->
+  <!--  mozliwosc cofniecia w strict mode-->
+  <!-- podpowiedz ruchu? -->
+  <!-- guzik jak sie przytrzyma zeby lecialy numerki? raczej nie przyda sie tutaj ale ciekawe jak to zrobic -->
+  <!-- jak dobrze to zeby guzik next migal<--- miga ale zrobione nieefektywnie w kodzie nie umiem lepiej :( -->
+
+</body>
+
+</html>
